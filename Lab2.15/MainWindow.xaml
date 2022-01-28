@@ -1,0 +1,186 @@
+﻿<Window x:Class="Lab2._15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab2._15"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="650">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <FlowDocumentScrollViewer x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph FontSize="20" FontWeight="Bold">Прокрастинация</Paragraph>
+                <Paragraph>Прокрастинация - откладывание важных дел на потом.</Paragraph>
+                <Paragraph>Мне нужно написать заметку, но я сначала уберусь на столе - невозможно работать в таком бардаке! - 
+                    попью чайку, а то устала убираться и посмотрю, что там в фейсбучке тем временем происходит... 
+                    Ой, блин, пора в бассейн идти, ну ладно, напишу завтра. Знакомая ситуация? Мне - да. 
+                    Обычно люди замечают только верхний слой прокрастинации -- отвлечение.
+                </Paragraph>
+                <Paragraph>Но давайте посмотрим глубже. Запускается цикл с активации т.н. бесполезных правил прокрастинации:</Paragraph>
+                <List MarkerStyle="Circle">
+                    <ListItem>
+                        <Paragraph>Потребность в контроле "это я должен решать, что мне делать, а что нет"</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Поиск удовольствий "жизнь слишком коротка, чтобы заниматься скучными вещами"</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Страх провала или осуждения "я должен всё делать безупречно, иначе меня осудят"</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Страх неизвестности "если попробую что-то новое, неизвестно, чем это может кончиться"</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Низкая самооценка "у меня не получится"</Paragraph>
+                    </ListItem>
+                    <ListItem>
+                        <Paragraph>Упадок сил "нельзя работать, если чувствуешь усталость"</Paragraph>
+                    </ListItem>
+                </List>
+                <Paragraph>Другие варианты: Запуск правил вызывает дискомфорт, неприятные эмоции, которых хочется избежать.
+                    И мы избегаем - в соцсетях, наведении порядка, еде и т.п.</Paragraph>
+                <Paragraph>Что можно сделать?</Paragraph>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="*"/>
+                        <TableColumn Width="3*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>Что же?</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>Подробнее</Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow FontSize="14">
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">Выявить и переформулировать свои бесполезные правила.</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Italic>Вопросы для переформулировки:</Italic>
+                                </Paragraph>
+                                <List Margin="1">
+                                    <ListItem>
+                                        <Paragraph>Как звучит правило, которое я хочу переформулировать?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Откуда оно появилось?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>В чем его не бесполезность? нереалистичность? не справедливость?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Каковы негативные последствия того, что я придерживаюсь этого правила?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Какая может быть более адаптивная (гибкая, реалистичная) формулировка?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Что я могу сделать, чтобы внедрить новое правило в свою жизнь?</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow FontSize="14">
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">Научиться принимать дискомфорт и неприятные эмоции</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Italic>Практики</Italic>
+                                </Paragraph>
+                                <List MarkerStyle="Decimal" Margin="1">
+                                    <ListItem>
+                                        <Paragraph>Осознанность: медитация на дыхании, безоценочность, принятие</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>«Оседлать волну»: переждать неприятную эмоцию, не убегая от неё</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Конфоронтация дискомфорта: намеренно усилить неприятные ощущения, сделав что-то наперекор правилам.</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow FontSize="14">
+                            <TableCell>
+                                <Paragraph TextAlignment="Left">Отвечать своим отговоркам</Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Italic>Вопросы для конфронтации отговорок:</Italic>
+                                </Paragraph>
+                                <List Margin="1">
+                                    <ListItem>
+                                        <Paragraph>Какие есть доказательства в пользу того, что мне лучше отложить это дело?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Какие доказательства в пользу того, что мне лучше начать это дело сейчас?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Правда ли, что в долгосрочной перспективе мне будет лучше, если я отложу это дело?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Правда ли, что я не могу сделать даже самую маленькую часть этого задания сейчас? 
+                                            Могу ли я сделать сейчас хоть что-то, даже если условия не идеальны?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Правда ли будет лучше сделать это позже?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Если я начну делать это задание сейчас, что произойдет? как я буду себя чувствовать?</Paragraph>
+                                    </ListItem>
+                                    <ListItem>
+                                        <Paragraph>Если я не начну делать дело сейчас – что произойдет? как я буду себя чувствовать?</Paragraph>
+                                    </ListItem>
+                                </List>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+                <Paragraph>
+                    Часто с прокрастинацией сталкиваются студенты при написании курсовых и дипломов. 
+                    Для выявления бесполезных правил спрашиваешь: 
+                    Как, по-вашему, должно выглядеть написание курсовой работы?
+                </Paragraph>
+                <Paragraph>Те, кто склонен откладывать, обычно имеют жёсткие правила: 
+                    "Я должен сесть за работу полный сил и идей. 
+                    Я должен сразу начать писать умно и красиво. 
+                    Мысли должны литься потоком. 
+                    Работы много, поэтому за один раз мне нужно написать не меньше главы."
+                </Paragraph>
+                <Paragraph>Соответственно мы формулируем антиправила: 
+                    "Я могу попробовать приняться за работу даже в не идеальных условиях, 
+                    если немного устал. Я знаю, что если начать работу, то сил может прибавиться, 
+                    только начнёшь. Лучше написать глупо и потом исправить, чем не написать ничего. 
+                    Я могу написать несвязные наброски и отрывки мыслей, устроить мозговой штурм, 
+                    а потом выбрать то, что мне понравилось. 
+                    Я могу только создать файл и назвать его "курсовая" для начала - 
+                    это уже будет что-то и т.п."
+                </Paragraph>
+                <Paragraph>Пускай ваши правила будут для вас, а не вы для правил)</Paragraph>
+                <BlockUIContainer>
+                    <WrapPanel>
+                        <Label Content="Если понравилось, жми:"/>
+                        <Button x:Name="like" Content="Нравится!" Width="100" Click="like_Click"/>
+                        <Border BorderBrush="DimGray" BorderThickness="1" Width="30" Margin="5,0,0,0">
+                            <TextBlock x:Name="LikesCount" Margin="2"/>
+                        </Border>
+                    </WrapPanel>
+                </BlockUIContainer>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Content="Открыть" Click="Button_Click_2"/>
+            <Button Content="Сохранить" Click="Button_Click_1"/>
+            <Button Content="Очистить" Click="Button_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
